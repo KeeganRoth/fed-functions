@@ -35,3 +35,11 @@ greet2("Tony");
 4. optional parens around single-arguments
 5. Simple returns don't need the "return" keyword or braces
 */
+
+const isShopping = (b, callback) => {
+  console.log(b ? "Yep, they are shopping" : "No, they are not shopping");
+  callback();
+};
+
+isShopping(true, () => console.log("done"));
+isShopping(false, () => console.log("done"));
