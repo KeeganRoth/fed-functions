@@ -41,8 +41,8 @@ const isShopping = (b, callback) => {
   callback();
 };
 
-isShopping(true, () => console.log("done"));
-isShopping(false, () => console.log("done"));
+isShopping(true, () => console.log("doneT"));
+isShopping(false, () => console.log("doneF"));
 
 const describePet = petObj => {
   console.log(
@@ -50,7 +50,7 @@ const describePet = petObj => {
   );
 };
 
-const describePetDestructured = ({ name }, ...rest) => {
+const describePetDestructured = ({ name, ...rest }) => {
   console.log(`This pet is called ${name} and is a breed of ${rest.breed}`);
 };
 
