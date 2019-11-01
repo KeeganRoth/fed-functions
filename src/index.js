@@ -36,8 +36,10 @@ greet2("Tony");
 5. Simple returns don't need the "return" keyword or braces
 */
 
-const isShopping = (b, callback) => {
-  console.log(b ? "Yep, they are shopping" : "No, they are not shopping");
+const isShopping = (isShoppingNow, callback) => {
+  console.log(
+    isShoppingNow ? "Yep, they are shopping" : "No, they are not shopping"
+  );
   callback();
 };
 
